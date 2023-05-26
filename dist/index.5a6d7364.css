@@ -34,6 +34,7 @@ html {
   justify-content: center;
   align-items: center;
   display: flex;
+  position: relative;
 }
 
 .hero-section__text-box--heading__box {
@@ -43,7 +44,7 @@ html {
 .hero-section__text-box--heading__box--heading-primary {
   flex-direction: column;
   font-family: Julee, cursive;
-  font-size: 5.2rem;
+  font-size: 5rem;
   display: flex;
   position: relative;
 }
@@ -86,6 +87,25 @@ html {
 .hero-section__text-box--img {
   width: 30%;
   height: auto;
+}
+
+.hero-span-img-one, .hero-span-img-two {
+  width: 50rem;
+  height: 50rem;
+  z-index: -1;
+  opacity: .1;
+  position: absolute;
+}
+
+.hero-span-img-one {
+  top: 0;
+  right: 0;
+}
+
+.hero-span-img-two {
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
 }
 
 .navigation {

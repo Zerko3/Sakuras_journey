@@ -6,6 +6,7 @@
 }
 .hero-section {
   &__text-box {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,4 +66,24 @@
       height: auto;
     }
   }
+}
+
+.hero-span-img-one,
+.hero-span-img-two {
+  position: absolute;
+  width: 50rem;
+  height: 50rem;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.hero-span-img-one {
+  top: 0;
+  right: 0;
+}
+
+.hero-span-img-two {
+  left: 0;
+  top: 0;
+  transform: rotateY(180deg);
 }
