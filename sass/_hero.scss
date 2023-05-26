@@ -1,0 +1,7 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.heading-primary {
+  @include headerStyle;
+  color: var(--color-text);
+}

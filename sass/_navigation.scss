@@ -1,0 +1,35 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo-box {
+    &--logo {
+      width: 20%;
+      height: 20%;
+    }
+  }
+
+  &__section__links-box {
+    &--links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text);
+      font-size: font-size(font-size-small);
+    }
+  }
+
+  &__section__buttons-box {
+    &--links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text);
+      font-size: font-size(font-size-small);
+    }
+  }
+}
