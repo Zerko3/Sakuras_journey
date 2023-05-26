@@ -4,44 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./img/img-1.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Julee&family=Montserrat:wght@100;200;300;400;500;600;700&family=Noto+Sans+JP:wght@100&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/801fe15e34.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="./src/script.js"></script>
-    <title>Document</title>
+    <title>Sakuras journey</title>
   </head>
   <body>
     <header class="header">
       <nav class="navigation">
         <div class="navigation__logo-box">
-          <!-- <img
+          <img
             class="navigation__logo-box--logo"
-            src="./img/Sakura_Jurneys_logo.png"
+            src="./img/img-1.jpg"
             alt="Logo of the company."
-          /> -->
+          />
+          <!-- <span class="navigation__logo-box--text">Sakuras Jurney</span> -->
         </div>
         <div class="navigation__section__links-box">
           <ul class="navigation__section__links-box--links">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Destinations</a></li>
-            <li><a href="#">Testimonials</a></li>
+            <li class="navigation__section__links-box--links__link">
+              <a href="#">About us</a>
+            </li>
+            <li class="navigation__section__links-box--links__link">
+              <a href="#">Destinations</a>
+            </li>
+            <li class="navigation__section__links-box--links__link" ß>
+              <a href="#">Testimonials</a>
+            </li>
           </ul>
         </div>
         <div class="navigation__section__buttons-box">
           <ul class="navigation__section__buttons-box--links">
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Toggle dark mode</a></li>
+            <li
+              class="navigation__section__buttons-box--links--shopping--links"
+            >
+              <a
+                class="navigation__section__buttons-box--links--shopping--links__link"
+                href="#"
+                ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <!-- <li><a href="#">Toggle dark mode</a></li> -->
           </ul>
         </div>
       </nav>
+      <section class="hero-section">
+        <div class="hero-section__text-box">
+          <div class="hero-section__text-box--heading__box">
+            <h1 class="hero-section__text-box--heading__box--heading-primary">
+              <span
+                class="hero-section__text-box--heading__box--heading-primary__span-one"
+              >
+                Explore the traditional</span
+              >
+              <span
+                class="hero-section__text-box--heading__box--heading-primary--span-two"
+                >Land of the Rising Sun</span
+              >
+            </h1>
+          </div>
+          <p class="hero-section__text-box--para">
+            Join us as we take you on a journey beyond guidebooks, unlocking
+            hidden gems and insider secrets along the way. Our dedicated team of
+            knowledgeable guides ensures that every step of your trip is filled
+            with awe-inspiring moments and authentic cultural encounters.
+          </p>
+          <a class="hero-section__text-box--btn" href="#"
+            >Embark on a journey</a
+          >
+          <img
+            class="hero-section__text-box--img"
+            src="./img/img-2.jpg"
+            alt="hero background image"
+          />
+        </div>
+      </section>
     </header>
-
-    <h1 class="heading-primary">
-      Explore the traditional Land of the Rising Sun
-    </h1>
   </body>
 </html>

@@ -1,7 +1,68 @@
 @use "mixins" as *;
 @use "variables" as *;
 
-.heading-primary {
-  @include headerStyle;
-  color: var(--color-text);
+.header {
+  height: 100vh;
+}
+.hero-section {
+  &__text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &--heading__box {
+      margin-bottom: 5rem;
+      &--heading-primary {
+        @include headerStyle;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        &--span-two {
+          position: absolute;
+          width: 100%;
+          top: 5rem;
+          left: 30%;
+          color: var(--color-buttons);
+        }
+      }
+    }
+    &--para {
+      margin-top: 3rem;
+      width: 70%;
+      font-size: 1.2rem;
+      color: var(--color-text);
+      text-align: center;
+    }
+
+    &--btn {
+      margin-top: 2rem;
+      padding: 1.2rem 2.4rem;
+      background-color: var(--color-buttons);
+      color: var(--color-background);
+      border: none;
+      border-top-right-radius: 0;
+      border-top-left-radius: 2.5rem;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 2.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &--btn:link,
+    &--btn:visited {
+      background-color: var(--color-buttons);
+      color: var(--color-background);
+    }
+
+    &--btn:hover,
+    &--btn:active {
+      border-radius: 2.5rem;
+    }
+
+    &--img {
+      width: 30%;
+      height: auto;
+    }
+  }
 }
