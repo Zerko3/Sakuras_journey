@@ -165,4 +165,30 @@ html {
   width: 100%;
   height: 0.1rem;
   background-color: #d5d2e6;
+}
+
+.section-break {
+  overflow: hidden;
+}
+.section-break--kanji-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  white-space: nowrap;
+  animation: infinityScrollKanjiOne 33s linear infinite;
+}
+.section-break--kanji-box__kanji {
+  font-family: "Noto Sans JP", sans-serif;
+  display: inline-block;
+  font-size: 5.2rem;
+  color: var(--color-text);
+  opacity: 0.1;
+  margin: 0 5rem;
+}
+
+@keyframes infinityScrollKanjiOne {
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
 }/*# sourceMappingURL=style.css.map */
