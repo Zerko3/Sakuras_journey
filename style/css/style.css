@@ -44,7 +44,7 @@ html {
 }
 .hero-section__text-box--heading__box--heading-primary {
   font-family: "Julee", cursive;
-  font-size: 5rem;
+  font-size: 5.2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -168,9 +168,10 @@ html {
 }
 
 .section-break {
+  padding-top: 9.6rem;
   overflow: hidden;
 }
-.section-break--kanji-box {
+.section-break--kanji--box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,10 +179,10 @@ html {
   white-space: nowrap;
   animation: infinityScrollKanjiOne 33s linear infinite;
 }
-.section-break--kanji-box__kanji {
+.section-break--kanji--box__kanji {
   font-family: "Noto Sans JP", sans-serif;
   display: inline-block;
-  font-size: 5.2rem;
+  font-size: 8rem;
   color: var(--color-text);
   opacity: 0.1;
   margin: 0 5rem;
@@ -191,4 +192,46 @@ html {
   100% {
     transform: translate3d(-100%, 0, 0);
   }
+}
+.header-secondary {
+  font-family: "Julee", cursive;
+  font-size: 4.4rem;
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.section-shop {
+  padding-top: 9.6rem;
+}
+.section-shop__items--box__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.section-shop__items--box__container--box {
+  border: 1px solid var(--color-buttons);
+  padding: 2.4rem;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 2.5rem;
+}
+.section-shop__items--box__container--box__name--box--heading {
+  font-size: calc(1.3rem + 2vw);
+  color: var(--color-text);
+  font-weight: 300;
+}
+.section-shop__items--box__container--box--img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
