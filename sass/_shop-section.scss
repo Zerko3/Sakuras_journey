@@ -1,0 +1,49 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.header-secondary {
+  @include headerSecondary;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.section-shop {
+  padding-top: 9.6rem;
+
+  &__items--box__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    &--box {
+      border: 1px solid var(--color-buttons);
+      padding: 2.4rem;
+      border-top-left-radius: 2.5rem;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 2.5rem;
+
+      &__name--box {
+        &--heading {
+          font-size: font-size(font-size-medium);
+          color: var(--color-text);
+          font-weight: font-weight(font-weight-light);
+        }
+      }
+
+      &--img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 2.5rem;
+      }
+    }
+  }
+}

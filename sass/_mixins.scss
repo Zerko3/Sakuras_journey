@@ -1,4 +1,9 @@
 @mixin headerStyle {
   font-family: "Julee", cursive;
-  font-size: 5rem;
+  font-size: 5.2rem;
+}
+@mixin headerSecondary {
+  font-family: "Julee", cursive;
+  font-size: 4.4rem;
+  color: var(--color-text);
 }

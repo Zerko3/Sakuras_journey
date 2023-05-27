@@ -44,7 +44,7 @@ html {
 .hero-section__text-box--heading__box--heading-primary {
   flex-direction: column;
   font-family: Julee, cursive;
-  font-size: 5rem;
+  font-size: 5.2rem;
   display: flex;
   position: relative;
 }
@@ -178,10 +178,11 @@ html {
 }
 
 .section-break {
+  padding-top: 9.6rem;
   overflow: hidden;
 }
 
-.section-break--kanji-box {
+.section-break--kanji--box {
   width: 100%;
   white-space: nowrap;
   justify-content: center;
@@ -190,12 +191,12 @@ html {
   display: flex;
 }
 
-.section-break--kanji-box__kanji {
+.section-break--kanji--box__kanji {
   color: var(--color-text);
   opacity: .1;
   margin: 0 5rem;
   font-family: Noto Sans JP, sans-serif;
-  font-size: 5.2rem;
+  font-size: 8rem;
   display: inline-block;
 }
 
@@ -203,6 +204,47 @@ html {
   100% {
     transform: translate3d(-100%, 0, 0);
   }
+}
+
+.header-secondary {
+  color: var(--color-text);
+  font-family: Julee, cursive;
+  font-size: 4.4rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.section-shop {
+  padding-top: 9.6rem;
+}
+
+.section-shop__items--box__container {
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.section-shop__items--box__container--box {
+  border: 1px solid var(--color-buttons);
+  border-radius: 2.5rem 0;
+  padding: 2.4rem;
+}
+
+.section-shop__items--box__container--box__name--box--heading {
+  color: var(--color-text);
+  font-size: calc(1.3rem + 2vw);
+  font-weight: 300;
+}
+
+.section-shop__items--box__container--box--img {
+  width: 100%;
+  height: auto;
+  border-radius: 2.5rem 0;
 }
 
 /*# sourceMappingURL=index.5a6d7364.css.map */
