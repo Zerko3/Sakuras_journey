@@ -9,6 +9,15 @@
     z-index: 1;
   }
 
+  &--span {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    font-size: 1.8rem;
+    font-family: "Julee", cursive;
+    color: var(--color-buttons);
+  }
+
   &--img {
     position: absolute;
     top: -55%;
@@ -93,6 +102,7 @@
         background-color: var(--color-buttons);
         color: var(--color-background);
         font-size: font-size(font-size-small);
+        font-weight: font-weight(font-weight-light);
         border: none;
         border-top-right-radius: 0;
         border-top-left-radius: 2.5rem;

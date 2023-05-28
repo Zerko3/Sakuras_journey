@@ -1,0 +1,59 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.section-testimonials__heading--box {
+  margin-top: 4.8rem;
+  &__heading--primary {
+    @include headerSecondary;
+  }
+}
+
+.section-testimonials__content--box {
+  &__testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    &--user__logo {
+      border: none;
+      border-radius: 50%;
+      &--img {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+
+    &--user__para--box {
+      width: 70%;
+
+      &__para {
+        color: var(--color-text);
+        font-size: font-size(font-size-small);
+      }
+    }
+
+    &--btn--left,
+    &--btn--right {
+      position: absolute;
+      border: none;
+      background-color: var(--color-buttons);
+      padding: 1.2rem;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
+      color: var(--color-background);
+    }
+
+    &--btn--left {
+      left: 0;
+      top: 50%;
+    }
+
+    &--btn--right {
+      right: 0;
+      top: 50%;
+    }
+  }
+}
