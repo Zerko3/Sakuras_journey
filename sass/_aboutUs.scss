@@ -1,0 +1,47 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+.section-aboutUs__heading--box {
+  margin-top: 9.6rem;
+  position: relative;
+  z-index: 1;
+  &__heading--span {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    font-size: 1.8rem;
+    font-family: "Julee", cursive;
+    color: var(--color-buttons);
+  }
+
+  &__heading--secondary {
+    @include headerSecondary;
+  }
+
+  &--img {
+    top: -25%;
+    left: -10%;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    opacity: 0.1;
+    z-index: -1;
+  }
+}
+
+.section-aboutUs__content--box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+
+  &--img {
+    width: 100%;
+    height: auto;
+  }
+
+  &--para {
+    color: var(--color-text);
+    font-size: font-size(font-size-small);
+  }
+}

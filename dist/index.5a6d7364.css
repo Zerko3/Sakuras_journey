@@ -233,8 +233,8 @@ html {
   height: auto;
   opacity: .1;
   position: absolute;
-  top: -55%;
-  left: -5%;
+  top: -25%;
+  left: -10%;
 }
 
 .container {
@@ -432,6 +432,54 @@ html {
 .section-testimonials__content--box__testimonial--btn--right {
   top: 50%;
   right: 0;
+}
+
+.section-aboutUs__heading--box {
+  z-index: 1;
+  margin-top: 9.6rem;
+  position: relative;
+}
+
+.section-aboutUs__heading--box__heading--span {
+  color: var(--color-buttons);
+  font-family: Julee, cursive;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+
+.section-aboutUs__heading--box__heading--secondary {
+  color: var(--color-text);
+  font-family: Julee, cursive;
+  font-size: 4.4rem;
+}
+
+.section-aboutUs__heading--box--img {
+  width: 20%;
+  height: auto;
+  opacity: .1;
+  z-index: -1;
+  position: absolute;
+  top: -25%;
+  left: -10%;
+}
+
+.section-aboutUs__content--box {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.section-aboutUs__content--box--img {
+  width: 100%;
+  height: auto;
+}
+
+.section-aboutUs__content--box--para {
+  color: var(--color-text);
+  font-size: calc(1rem + .5vw);
 }
 
 /*# sourceMappingURL=index.5a6d7364.css.map */
