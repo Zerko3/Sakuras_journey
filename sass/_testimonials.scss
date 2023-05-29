@@ -3,8 +3,29 @@
 
 .section-testimonials__heading--box {
   margin-top: 4.8rem;
+  position: relative;
+  z-index: 1;
+
+  &--span {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    font-size: 1.8rem;
+    font-family: "Julee", cursive;
+    color: var(--color-buttons);
+  }
   &__heading--primary {
     @include headerSecondary;
+  }
+
+  &--img {
+    top: -25%;
+    left: -10%;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    opacity: 0.1;
+    z-index: -1;
   }
 }
 
@@ -27,6 +48,23 @@
 
     &--user__para--box {
       width: 70%;
+
+      &__user--div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        &--user {
+          font-size: font-size(font-size-small);
+          color: var(--color-buttons);
+        }
+
+        &--date {
+          font-size: font-size(font-size-small);
+          color: var(--color-buttons);
+        }
+      }
 
       &__para {
         color: var(--color-text);

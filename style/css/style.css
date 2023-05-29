@@ -326,11 +326,30 @@ html {
 
 .section-testimonials__heading--box {
   margin-top: 4.8rem;
+  position: relative;
+  z-index: 1;
+}
+.section-testimonials__heading--box--span {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 1.8rem;
+  font-family: "Julee", cursive;
+  color: var(--color-buttons);
 }
 .section-testimonials__heading--box__heading--primary {
   font-family: "Julee", cursive;
   font-size: 4.4rem;
   color: var(--color-text);
+}
+.section-testimonials__heading--box--img {
+  top: -25%;
+  left: -10%;
+  width: 20%;
+  height: auto;
+  position: absolute;
+  opacity: 0.1;
+  z-index: -1;
 }
 
 .section-testimonials__content--box__testimonial {
@@ -350,6 +369,20 @@ html {
 }
 .section-testimonials__content--box__testimonial--user__para--box {
   width: 70%;
+}
+.section-testimonials__content--box__testimonial--user__para--box__user--div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.section-testimonials__content--box__testimonial--user__para--box__user--div--user {
+  font-size: calc(1rem + 0.5vw);
+  color: var(--color-buttons);
+}
+.section-testimonials__content--box__testimonial--user__para--box__user--div--date {
+  font-size: calc(1rem + 0.5vw);
+  color: var(--color-buttons);
 }
 .section-testimonials__content--box__testimonial--user__para--box__para {
   color: var(--color-text);
