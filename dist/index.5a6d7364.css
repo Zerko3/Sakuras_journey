@@ -140,6 +140,10 @@ html {
   display: flex;
 }
 
+.navigation__section__links-box--links__link a {
+  position: relative;
+}
+
 .navigation__section__links-box--links__link a:link, .navigation__section__links-box--links__link a:visited {
   color: var(--color-text);
   transition: all .3s ease-in-out;
@@ -147,6 +151,22 @@ html {
 
 .navigation__section__links-box--links__link a:hover, .navigation__section__links-box--links__link a:active {
   color: var(--color-buttons);
+}
+
+.navigation__section__links-box--links__link a:link:after, .navigation__section__links-box--links__link a:visited:after {
+  content: "";
+  transition: all .3s ease-in-out;
+  position: absolute;
+}
+
+.navigation__section__links-box--links__link a:hover:after, .navigation__section__links-box--links__link a:active:after {
+  background-color: var(--color-buttons);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
 }
 
 .navigation__section__buttons-box--links {
@@ -175,6 +195,29 @@ html {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.animated--nav {
+  animation: 5s ease-in-out animationNavigation;
+  display: none;
+}
+
+.navigation--hamburger {
+  height: 4rem;
+  width: 4rem;
+  z-index: 2;
+  background-color: red;
+  border-radius: 50%;
+}
+
+@keyframes animationNavigation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 .section-break {
