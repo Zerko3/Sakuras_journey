@@ -477,7 +477,13 @@ html {
   height: auto;
 }
 
-.section-aboutUs__content--box--para {
+.section-aboutUs__content--box__para--box--span {
+  color: var(--color-buttons);
+  font-family: Julee, cursive;
+  font-size: calc(1.3rem + 5vw);
+}
+
+.section-aboutUs__content--box__para--box--para {
   color: var(--color-text);
   font-size: calc(1rem + .5vw);
 }

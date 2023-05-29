@@ -445,7 +445,12 @@ html {
   width: 100%;
   height: auto;
 }
-.section-aboutUs__content--box--para {
+.section-aboutUs__content--box__para--box--span {
+  font-family: "Julee", cursive;
+  color: var(--color-buttons);
+  font-size: calc(1.3rem + 5vw);
+}
+.section-aboutUs__content--box__para--box--para {
   color: var(--color-text);
   font-size: calc(1rem + 0.5vw);
 }/*# sourceMappingURL=style.css.map */

@@ -40,8 +40,15 @@
     height: auto;
   }
 
-  &--para {
-    color: var(--color-text);
-    font-size: font-size(font-size-small);
+  &__para--box {
+    &--span {
+      font-family: "Julee", cursive;
+      color: var(--color-buttons);
+      font-size: font-size(font-size-large);
+    }
+    &--para {
+      color: var(--color-text);
+      font-size: font-size(font-size-small);
+    }
   }
 }
