@@ -134,12 +134,29 @@ html {
   gap: 1rem;
   font-size: calc(1rem + 0.5vw);
 }
+.navigation__section__links-box--links__link a {
+  position: relative;
+}
 .navigation__section__links-box--links__link a:link, .navigation__section__links-box--links__link a:visited {
   color: var(--color-text);
   transition: all 0.3s ease-in-out;
 }
 .navigation__section__links-box--links__link a:hover, .navigation__section__links-box--links__link a:active {
   color: var(--color-buttons);
+}
+.navigation__section__links-box--links__link a:link::after, .navigation__section__links-box--links__link a:visited::after {
+  position: absolute;
+  content: "";
+  transition: all 0.3s ease-in-out;
+}
+.navigation__section__links-box--links__link a:hover::after, .navigation__section__links-box--links__link a:active::after {
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  background-color: var(--color-buttons);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
 }
 .navigation__section__buttons-box--links {
   display: flex;
@@ -167,6 +184,27 @@ html {
   background-color: #d5d2e6;
 }
 
+.animated--nav {
+  animation: animationNavigation 5s ease-in-out;
+  display: none;
+}
+
+.navigation--hamburger {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 2;
+}
+
+@keyframes animationNavigation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .section-break {
   padding-top: 9.6rem;
   overflow: hidden;
