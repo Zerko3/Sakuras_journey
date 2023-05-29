@@ -1,6 +1,10 @@
 @use "mixins" as *;
 @use "variables" as *;
 
+.section-aboutUs {
+  margin-top: 9.6rem;
+}
+
 .section-aboutUs__heading--box {
   margin-top: 9.6rem;
   position: relative;
