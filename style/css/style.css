@@ -324,6 +324,10 @@ html {
   color: var(--color-buttons);
 }
 
+.section-testimonials {
+  margin: 9.6rem 0;
+}
+
 .section-testimonials__heading--box {
   margin-top: 4.8rem;
   position: relative;
@@ -407,6 +411,10 @@ html {
   top: 50%;
 }
 
+.section-aboutUs {
+  margin-top: 9.6rem;
+}
+
 .section-aboutUs__heading--box {
   margin-top: 9.6rem;
   position: relative;
@@ -453,4 +461,110 @@ html {
 .section-aboutUs__content--box__para--box--para {
   color: var(--color-text);
   font-size: calc(1rem + 0.5vw);
+}
+
+.section-register {
+  margin-top: 9.6rem;
+}
+.section-register .section-register__heading--box {
+  margin-top: 4.8rem;
+  position: relative;
+  z-index: 1;
+}
+.section-register .section-register__heading--box--span {
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  font-size: 1.8rem;
+  font-family: "Julee", cursive;
+  color: var(--color-buttons);
+}
+.section-register .section-register__heading--box__heading--primary {
+  font-family: "Julee", cursive;
+  font-size: 4.4rem;
+  color: var(--color-text);
+}
+.section-register .section-register__heading--box--img {
+  top: -25%;
+  left: -10%;
+  width: 20%;
+  height: auto;
+  position: absolute;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.section-register__content--box {
+  margin-top: 4.4rem;
+  height: 60vh;
+  background-color: red;
+  padding: 1.2rem 2.4rem;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 65%, transparent 65%), url("../../img/shikorku-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.section-register__content--box--heading--primary {
+  color: var(--color-text);
+  font-size: calc(1.3rem + 2vw);
+  font-family: "Julee", cursive;
+}
+.section-register__content--box--input--box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+.section-register__content--box--input--box--name {
+  width: 50%;
+  padding: 1.5rem 3rem;
+}
+.section-register__content--box--input--box--email {
+  width: 50%;
+  padding: 1.5rem 3rem;
+}
+.section-register__content--box--input--box--checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.section-register__content--box--input--box--checkbox--lable {
+  font-size: calc(1rem + 0.5vw);
+  color: var(--color-text);
+}
+.section-register__content--box--input--box--checkbox--check {
+  font-size: calc(1rem + 0.5vw);
+  color: var(--color-text);
+  position: relative;
+}
+.section-register__content--box--input--box--checkbox--check::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+}
+.section-register__content--box--input--box--btn {
+  margin-top: 2rem;
+  padding: 1.2rem 2.4rem;
+  background-color: var(--color-buttons);
+  color: var(--color-background);
+  border: none;
+  border-top-right-radius: 0;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.section-register__content--box--input--box--btn:link, .section-register__content--box--input--box--btn:visited {
+  background-color: var(--color-buttons);
+  color: var(--color-background);
+}
+.section-register__content--box--input--box--btn:hover, .section-register__content--box--input--box--btn:active {
+  border-radius: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
