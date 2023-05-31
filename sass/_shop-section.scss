@@ -1,5 +1,5 @@
-@use "mixins" as *;
-@use "variables" as *;
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .header-secondary--box {
   position: relative;
@@ -14,7 +14,7 @@
     top: -1rem;
     left: 0;
     font-size: 1.8rem;
-    font-family: "Julee", cursive;
+    font-family: 'Julee', cursive;
     color: var(--color-buttons);
   }
 
@@ -126,7 +126,7 @@
         &--lists {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
 
           li {

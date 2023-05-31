@@ -462,7 +462,7 @@ html {
 .section-shop__items--box__container--box__bullets-box--lists {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .section-shop__items--box__container--box__bullets-box--lists li {

@@ -483,7 +483,7 @@ html {
 .section-shop__items--box__container--box__bullets-box--lists {
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
 }
 
