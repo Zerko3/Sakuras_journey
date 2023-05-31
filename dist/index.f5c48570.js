@@ -578,7 +578,11 @@ const caroselLeftBtn = document.querySelector(".section-testimonials__content--b
 const caroselRightBtn = document.querySelector(".section-testimonials__content--box--btn--right");
 const caroselItemNumber = caroselItem.length;
 let position = 0;
-console.log(caroselItemNumber);
+const heroBtn = document.querySelector(".hero-section__text-box--btn");
+const footerBtnTop = document.querySelector(".footer-grid--btn-box--btn");
+const footerLinks = document.querySelector(".footer-grid--links-box");
+const registerSection = document.querySelector(".section-register");
+const hamburgerLinksBox = document.querySelector(".navigation--hamburger--box--links");
 // Toggle hamburger side navigation view
 const toggleHamburgerNavView = function() {
     hamburgerSideNavigation.classList.toggle("navigation--hamburger--active");
@@ -615,6 +619,17 @@ const scrollFunction = function(e) {
     else if (targetKey === "Testimonials") sectionTestimonials.scrollIntoView();
     else if (targetKey === "Destinations") shop.scrollIntoView();
 };
+const scrollFunctionHamburger = function(e) {
+    e.preventDefault();
+    const targetKey = e.target.textContent;
+    if (targetKey === "About us") sectionAboutUs.scrollIntoView();
+    else if (targetKey === "Testimonials") sectionTestimonials.scrollIntoView();
+    else if (targetKey === "Destinations") shop.scrollIntoView();
+};
+const heroBtnScroll = function(e) {
+    e.preventDefault();
+    shop.scrollIntoView();
+};
 // Carosel function
 const hideAllSlides = function() {
     for (const item of caroselItem){
@@ -646,12 +661,27 @@ const handleMoveToPrevSlide = function(e) {
 // dots[position].classList.add('selected-dot');
 // dots[position].checked = true;
 };
+const scrollToTop = function() {
+    navigation.scrollIntoView();
+};
+const footerLinksScroll = function(e) {
+    e.preventDefault();
+    const targetKey = e.target.textContent;
+    if (targetKey === "Shop") shop.scrollIntoView();
+    else if (targetKey === "Testimonials") sectionTestimonials.scrollIntoView();
+    else if (targetKey === "Why us") sectionAboutUs.scrollIntoView();
+    else if (targetKey === "Ask us a question") registerSection.scrollIntoView();
+};
 // Initialization
 const init = function() {
     hamburgerNav.addEventListener("click", toggleHamburgerNavView);
     mainNavigationLinks.addEventListener("click", scrollFunction);
     caroselLeftBtn.addEventListener("click", handleMoveToPrevSlide);
     caroselRightBtn.addEventListener("click", handleMoveToNextSlide);
+    heroBtn.addEventListener("click", heroBtnScroll);
+    footerBtnTop.addEventListener("click", scrollToTop);
+    footerLinks.addEventListener("click", footerLinksScroll);
+    hamburgerLinksBox.addEventListener("click", scrollFunctionHamburger);
     observer.observe(sectionBreak);
     observerTwo.observe(hero);
 };
