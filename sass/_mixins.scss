@@ -1,9 +1,88 @@
+@use 'variables' as *;
+
 @mixin headerStyle {
-  font-family: "Julee", cursive;
+  font-family: 'Julee', cursive;
   font-size: 5.2rem;
+
+  @include media-medium-small {
+    font-size: 4rem;
+  }
+
+  @include media-small-extra {
+    font-size: 3rem;
+  }
 }
 @mixin headerSecondary {
-  font-family: "Julee", cursive;
+  font-family: 'Julee', cursive;
   font-size: 4.4rem;
   color: var(--color-text);
+
+  @include media-medium {
+    font-size: 4rem;
+  }
+
+  @include media-medium-small {
+    font-size: 3rem;
+  }
+}
+
+@mixin media-desktop {
+  @media screen and (min-width: break-point(break-point-desktop)) {
+    @content;
+  }
+}
+
+//*-*-*-*-*-*-*-*-*-*-- The 800px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-tablet {
+  @media screen and (max-width: break-point(break-point-tablet)) {
+    @content;
+  }
+}
+
+//*-*-*-*-*-*-*-*-*-*-- The 768px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-tablet-small {
+  @media screen and (max-width: break-point(break-point-tablet-small)) {
+    @content;
+  }
+}
+
+//*-*-*-*-*-*-*-*-*-*-- The 635px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-medium-big {
+  @media screen and (max-width: break-point(break-point-medium-big)) {
+    @content;
+  }
+}
+
+//*-*-*-*-*-*-*-*-*-*-- The 600px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-medium {
+  @media screen and (max-width: break-point(break-point-medium)) {
+    @content;
+  }
+}
+
+//*-*-*-*-*-*-*-*-*-*-- The 550px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-medium-small {
+  @media screen and (max-width: break-point(break-point-medium-small)) {
+    @content;
+  }
+}
+
+//*-*-*-*-*-*-*-*-*-*-- The 440px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-bigger-small {
+  @media screen and (max-width: break-point(break-point-bigger-small)) {
+    @content;
+  }
+}
+
+//*-*-*-*-*-*-*-*-*-*-- The 400px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-small {
+  @media screen and (max-width: break-point(break-point-small)) {
+    @content;
+  }
+}
+
+@mixin media-small-extra {
+  @media screen and (max-width: break-point(break-point-small-extra)) {
+    @content;
+  }
 }

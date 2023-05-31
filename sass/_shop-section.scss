@@ -57,6 +57,11 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 2.5rem;
       position: relative;
+
+      @include media-medium-big {
+        padding: 1.2rem;
+      }
+
       &__name--box {
         display: flex;
         align-items: flex-start;
@@ -65,6 +70,10 @@
           font-size: font-size(font-size-regular);
           color: var(--color-text);
           font-weight: font-weight(font-weight-light);
+
+          @include media-tablet {
+            font-size: font-size(font-size-small);
+          }
         }
 
         &--para {
@@ -109,6 +118,10 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 2.5rem;
         transition: all 0.3s ease-in-out;
+
+        @include media-medium-small {
+          padding: 1.2rem;
+        }
       }
 
       &--btn:link,
