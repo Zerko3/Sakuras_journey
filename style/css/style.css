@@ -508,12 +508,27 @@ html {
   z-index: -1;
 }
 
+.section-testimonials__content--box {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
 .section-testimonials__content--box__testimonial {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1 0 100%;
+  padding: 2rem;
+  animation: fadeVisibility 0.5s ease-in-out;
 }
 .section-testimonials__content--box__testimonial--user__logo {
   border: none;
@@ -544,8 +559,9 @@ html {
   color: var(--color-text);
   font-size: calc(1rem + 0.5vw);
 }
-.section-testimonials__content--box__testimonial--btn--left, .section-testimonials__content--box__testimonial--btn--right {
+.section-testimonials__content--box--btn--left, .section-testimonials__content--box--btn--right {
   position: absolute;
+  cursor: pointer;
   border: none;
   background-color: var(--color-buttons);
   padding: 1.2rem;
@@ -554,15 +570,31 @@ html {
   border-radius: 50%;
   color: var(--color-background);
 }
-.section-testimonials__content--box__testimonial--btn--left {
+.section-testimonials__content--box--btn--left {
   left: 0;
   top: 50%;
 }
-.section-testimonials__content--box__testimonial--btn--right {
+.section-testimonials__content--box--btn--right {
   right: 0;
   top: 50%;
 }
 
+.hidden--item {
+  display: none;
+}
+
+.visible--item {
+  display: flex;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section-aboutUs {
   margin-top: 9.6rem;
 }
