@@ -31,6 +31,10 @@
       gap: 1rem;
       font-size: font-size(font-size-small);
 
+      @include media-small-extra {
+        font-size: 1rem;
+      }
+
       &__link a {
         position: relative;
       }

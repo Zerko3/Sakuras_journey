@@ -51,12 +51,27 @@ html {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 555px) {
+  .hero-section__text-box--heading__box--heading-primary {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 355px) {
+  .hero-section__text-box--heading__box--heading-primary {
+    font-size: 3rem;
+  }
+}
 .hero-section__text-box--heading__box--heading-primary--span-two {
   position: absolute;
   width: 100%;
   top: 5rem;
   left: 30%;
   color: var(--color-buttons);
+}
+@media screen and (max-width: 768px) {
+  .hero-section__text-box--heading__box--heading-primary--span-two {
+    left: 0%;
+  }
 }
 .hero-section__text-box--para {
   margin-top: 3rem;
@@ -85,15 +100,21 @@ html {
   border-radius: 2.5rem;
 }
 .hero-section__text-box--img {
-  width: 30%;
+  width: 40%;
   height: auto;
+  z-index: -2;
+}
+@media screen and (max-width: 600px) {
+  .hero-section__text-box--img {
+    width: 50%;
+  }
 }
 
 .hero-span-img-one,
 .hero-span-img-two {
   position: absolute;
-  width: 50rem;
-  height: 50rem;
+  width: 50%;
+  height: 50%;
   z-index: -1;
   opacity: 0.1;
 }
@@ -135,6 +156,11 @@ html {
   justify-content: center;
   gap: 1rem;
   font-size: calc(1rem + 0.5vw);
+}
+@media screen and (max-width: 355px) {
+  .navigation__section__links-box--links {
+    font-size: 1rem;
+  }
 }
 .navigation__section__links-box--links__link a {
   position: relative;
@@ -355,6 +381,16 @@ html {
   color: var(--color-text);
   z-index: 1;
 }
+@media screen and (max-width: 600px) {
+  .header-secondary--box__header-secondary {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .header-secondary--box__header-secondary {
+    font-size: 3rem;
+  }
+}
 .header-secondary--box--span {
   position: absolute;
   top: -1rem;
@@ -402,6 +438,11 @@ html {
   border-bottom-right-radius: 2.5rem;
   position: relative;
 }
+@media screen and (max-width: 635px) {
+  .section-shop__items--box__container--box {
+    padding: 1.2rem;
+  }
+}
 .section-shop__items--box__container--box__name--box {
   display: flex;
   align-items: flex-start;
@@ -411,6 +452,11 @@ html {
   font-size: calc(1.3rem + 1vw);
   color: var(--color-text);
   font-weight: 300;
+}
+@media screen and (max-width: 800px) {
+  .section-shop__items--box__container--box__name--box--heading {
+    font-size: calc(1rem + 0.5vw);
+  }
 }
 .section-shop__items--box__container--box__name--box--para {
   display: flex;
@@ -451,6 +497,11 @@ html {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 2.5rem;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 555px) {
+  .section-shop__items--box__container--box--btn {
+    padding: 1.2rem;
+  }
 }
 .section-shop__items--box__container--box--btn:link, .section-shop__items--box__container--box--btn:visited {
   background-color: var(--color-buttons);
@@ -497,6 +548,16 @@ html {
   font-family: "Julee", cursive;
   font-size: 4.4rem;
   color: var(--color-text);
+}
+@media screen and (max-width: 600px) {
+  .section-testimonials__heading--box__heading--primary {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .section-testimonials__heading--box__heading--primary {
+    font-size: 3rem;
+  }
 }
 .section-testimonials__heading--box--img {
   top: -25%;
@@ -617,6 +678,16 @@ html {
   font-size: 4.4rem;
   color: var(--color-text);
 }
+@media screen and (max-width: 600px) {
+  .section-aboutUs__heading--box__heading--secondary {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .section-aboutUs__heading--box__heading--secondary {
+    font-size: 3rem;
+  }
+}
 .section-aboutUs__heading--box--img {
   top: -25%;
   left: -10%;
@@ -667,6 +738,16 @@ html {
   font-family: "Julee", cursive;
   font-size: 4.4rem;
   color: var(--color-text);
+}
+@media screen and (max-width: 600px) {
+  .section-register .section-register__heading--box__heading--primary {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 555px) {
+  .section-register .section-register__heading--box__heading--primary {
+    font-size: 3rem;
+  }
 }
 .section-register .section-register__heading--box--img {
   top: -25%;
@@ -766,6 +847,7 @@ html {
   display: flex;
   align-items: center;
   justify-items: center;
+  flex-direction: column;
   gap: 1rem;
 }
 .footer-grid--links-box ul li a {
@@ -787,6 +869,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .footer-grid--img-box--para--box p {
   color: var(--color-text);
@@ -807,6 +890,11 @@ html {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 2.5rem;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 440px) {
+  .footer-grid--btn-box--btn {
+    padding: 1.2rem;
+  }
 }
 .footer-grid--btn-box--btn:link, .footer-grid--btn-box--btn:visited {
   background-color: var(--color-buttons);

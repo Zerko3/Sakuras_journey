@@ -51,12 +51,30 @@ html {
   position: relative;
 }
 
+@media screen and (width <= 555px) {
+  .hero-section__text-box--heading__box--heading-primary {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (width <= 355px) {
+  .hero-section__text-box--heading__box--heading-primary {
+    font-size: 3rem;
+  }
+}
+
 .hero-section__text-box--heading__box--heading-primary--span-two {
   width: 100%;
   color: var(--color-buttons);
   position: absolute;
   top: 5rem;
   left: 30%;
+}
+
+@media screen and (width <= 768px) {
+  .hero-section__text-box--heading__box--heading-primary--span-two {
+    left: 0%;
+  }
 }
 
 .hero-section__text-box--para {
@@ -87,13 +105,20 @@ html {
 }
 
 .hero-section__text-box--img {
-  width: 30%;
+  width: 40%;
   height: auto;
+  z-index: -2;
+}
+
+@media screen and (width <= 600px) {
+  .hero-section__text-box--img {
+    width: 50%;
+  }
 }
 
 .hero-span-img-one, .hero-span-img-two {
-  width: 50rem;
-  height: 50rem;
+  width: 50%;
+  height: 50%;
   z-index: -1;
   opacity: .1;
   position: absolute;
@@ -140,6 +165,12 @@ html {
   gap: 1rem;
   font-size: calc(1rem + .5vw);
   display: flex;
+}
+
+@media screen and (width <= 355px) {
+  .navigation__section__links-box--links {
+    font-size: 1rem;
+  }
 }
 
 .navigation__section__links-box--links__link a {
@@ -374,6 +405,18 @@ html {
   font-size: 4.4rem;
 }
 
+@media screen and (width <= 600px) {
+  .header-secondary--box__header-secondary {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (width <= 555px) {
+  .header-secondary--box__header-secondary {
+    font-size: 3rem;
+  }
+}
+
 .header-secondary--box--span {
   color: var(--color-buttons);
   font-family: Julee, cursive;
@@ -422,6 +465,12 @@ html {
   position: relative;
 }
 
+@media screen and (width <= 635px) {
+  .section-shop__items--box__container--box {
+    padding: 1.2rem;
+  }
+}
+
 .section-shop__items--box__container--box__name--box {
   justify-content: center;
   align-items: flex-start;
@@ -432,6 +481,12 @@ html {
   color: var(--color-text);
   font-size: calc(1.3rem + 1vw);
   font-weight: 300;
+}
+
+@media screen and (width <= 800px) {
+  .section-shop__items--box__container--box__name--box--heading {
+    font-size: calc(1rem + .5vw);
+  }
 }
 
 .section-shop__items--box__container--box__name--box--para {
@@ -469,6 +524,12 @@ html {
   font-size: calc(1rem + .5vw);
   font-weight: 300;
   transition: all .3s ease-in-out;
+}
+
+@media screen and (width <= 555px) {
+  .section-shop__items--box__container--box--btn {
+    padding: 1.2rem;
+  }
 }
 
 .section-shop__items--box__container--box--btn:link, .section-shop__items--box__container--box--btn:visited {
@@ -522,6 +583,18 @@ html {
   color: var(--color-text);
   font-family: Julee, cursive;
   font-size: 4.4rem;
+}
+
+@media screen and (width <= 600px) {
+  .section-testimonials__heading--box__heading--primary {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (width <= 555px) {
+  .section-testimonials__heading--box__heading--primary {
+    font-size: 3rem;
+  }
 }
 
 .section-testimonials__heading--box--img {
@@ -654,6 +727,18 @@ html {
   font-size: 4.4rem;
 }
 
+@media screen and (width <= 600px) {
+  .section-aboutUs__heading--box__heading--secondary {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (width <= 555px) {
+  .section-aboutUs__heading--box__heading--secondary {
+    font-size: 3rem;
+  }
+}
+
 .section-aboutUs__heading--box--img {
   width: 20%;
   height: auto;
@@ -710,6 +795,18 @@ html {
   color: var(--color-text);
   font-family: Julee, cursive;
   font-size: 4.4rem;
+}
+
+@media screen and (width <= 600px) {
+  .section-register .section-register__heading--box__heading--primary {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (width <= 555px) {
+  .section-register .section-register__heading--box__heading--primary {
+    font-size: 3rem;
+  }
 }
 
 .section-register .section-register__heading--box--img {
@@ -810,6 +907,7 @@ html {
 }
 
 .footer-grid--links-box ul {
+  flex-direction: column;
   place-items: center;
   gap: 1rem;
   display: flex;
@@ -833,6 +931,7 @@ html {
 }
 
 .footer-grid--img-box--para--box {
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -852,6 +951,12 @@ html {
   margin-top: 2rem;
   padding: 1.2rem 2.4rem;
   transition: all .3s ease-in-out;
+}
+
+@media screen and (width <= 440px) {
+  .footer-grid--btn-box--btn {
+    padding: 1.2rem;
+  }
 }
 
 .footer-grid--btn-box--btn:link, .footer-grid--btn-box--btn:visited {

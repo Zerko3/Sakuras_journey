@@ -1,5 +1,5 @@
-@use "mixins" as *;
-@use "variables" as *;
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .footer-grid {
   display: grid;
@@ -15,6 +15,7 @@
       display: flex;
       align-items: center;
       justify-items: center;
+      flex-direction: column;
       gap: 1rem;
 
       li a {
@@ -39,6 +40,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      text-align: center;
 
       p {
         color: var(--color-text);
@@ -64,6 +66,10 @@
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 2.5rem;
       transition: all 0.3s ease-in-out;
+
+      @include media-bigger-small {
+        padding: 1.2rem;
+      }
     }
 
     &--btn:link,

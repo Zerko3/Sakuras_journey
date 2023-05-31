@@ -17,12 +17,12 @@ html {
 // 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 $font-weight: (
-  "font-weight-thin": 100,
-  "font-weight-light": 300,
-  "font-weight-regular": 400,
-  "font-weight-medium": 500,
-  "font-weight-bold": 700,
-  "font-weight-black": 900,
+  'font-weight-thin': 100,
+  'font-weight-light': 300,
+  'font-weight-regular': 400,
+  'font-weight-medium': 500,
+  'font-weight-bold': 700,
+  'font-weight-black': 900,
 );
 
 @function font-weight($font-weight-style) {
@@ -30,11 +30,11 @@ $font-weight: (
 }
 
 $font-size: (
-  "font-size-small": calc(1rem + 0.5vw),
-  "font-size-regular": calc(1.3rem + 1vw),
-  "font-size-medium": calc(1.3rem + 2vw),
-  "font-size-large": calc(1.3rem + 5vw),
-  "font-size-xlarge": calc(2.3rem + 5vw),
+  'font-size-small': calc(1rem + 0.5vw),
+  'font-size-regular': calc(1.3rem + 1vw),
+  'font-size-medium': calc(1.3rem + 2vw),
+  'font-size-large': calc(1.3rem + 5vw),
+  'font-size-xlarge': calc(2.3rem + 5vw),
 );
 
 @function font-size($font-size-style) {
@@ -42,10 +42,15 @@ $font-size: (
 }
 
 $break-points: (
-  "break-point-small": 400px,
-  "break-point-medium": 600px,
-  "break-point-tablet": 800px,
-  "break-point-desktop": 1300px,
+  'break-point-small-extra': 355px,
+  'break-point-small': 400px,
+  'break-point-bigger-small': 440px,
+  'break-point-medium-small': 555px,
+  'break-point-medium': 600px,
+  'break-point-medium-big': 635px,
+  'break-point-tablet-small': 768px,
+  'break-point-tablet': 800px,
+  'break-point-desktop': 1300px,
 );
 
 @function break-point($break-points-limit) {
