@@ -573,6 +573,12 @@ const shop = document.querySelector(".section-shop");
 const shopHeading = document.querySelector(".header-secondary--box__header-secondary");
 const sectionAboutUs = document.querySelector(".section-aboutUs");
 const sectionTestimonials = document.querySelector(".section-testimonials");
+const caroselItem = document.getElementsByClassName("section-testimonials__content--box__testimonial");
+const caroselLeftBtn = document.querySelector(".section-testimonials__content--box--btn--left");
+const caroselRightBtn = document.querySelector(".section-testimonials__content--box--btn--right");
+const caroselItemNumber = caroselItem.length;
+let position = 0;
+console.log(caroselItemNumber);
 // Toggle hamburger side navigation view
 const toggleHamburgerNavView = function() {
     hamburgerSideNavigation.classList.toggle("navigation--hamburger--active");
@@ -609,10 +615,43 @@ const scrollFunction = function(e) {
     else if (targetKey === "Testimonials") sectionTestimonials.scrollIntoView();
     else if (targetKey === "Destinations") shop.scrollIntoView();
 };
+// Carosel function
+const hideAllSlides = function() {
+    for (const item of caroselItem){
+        item.classList.add("hidden--item");
+        item.classList.remove("visible--item");
+    }
+};
+const handleMoveToNextSlide = function(e) {
+    hideAllSlides();
+    // check if last slide has been reached
+    if (position === caroselItemNumber - 1) position = 0; // go back to first slide
+    else // move to next slide
+    position++;
+    // make current slide visible
+    caroselItem[position].classList.add("visible--item");
+// update dot to represent current slide
+// dots[position].classList.add('selected-dot');
+// dots[position].checked = true;
+};
+const handleMoveToPrevSlide = function(e) {
+    hideAllSlides();
+    // check if we're on the first slide
+    if (position === 0) position = caroselItemNumber - 1; // move to the last slide
+    else // move back one
+    position--;
+    // make current slide visible
+    caroselItem[position].classList.add("visible--item");
+// update dot to represent current slide
+// dots[position].classList.add('selected-dot');
+// dots[position].checked = true;
+};
 // Initialization
 const init = function() {
     hamburgerNav.addEventListener("click", toggleHamburgerNavView);
     mainNavigationLinks.addEventListener("click", scrollFunction);
+    caroselLeftBtn.addEventListener("click", handleMoveToPrevSlide);
+    caroselRightBtn.addEventListener("click", handleMoveToNextSlide);
     observer.observe(sectionBreak);
     observerTwo.observe(hero);
 };
