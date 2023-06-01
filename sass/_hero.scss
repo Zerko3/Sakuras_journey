@@ -73,6 +73,10 @@
       @include media-medium {
         width: 50%;
       }
+
+      @include media-bigger-small {
+        width: 100%;
+      }
     }
   }
 }

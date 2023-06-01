@@ -45,6 +45,10 @@
     gap: 2rem;
     margin-top: 3.2rem;
 
+    @include media-medium-small-extra {
+      flex-direction: column;
+    }
+
     &--box {
       display: flex;
       align-items: flex-start;
@@ -60,6 +64,11 @@
 
       @include media-medium-big {
         padding: 1.2rem;
+      }
+
+      @include media-medium-small-extra {
+        width: 70%;
+        padding: 1.2rem 2.4rem;
       }
 
       &__name--box {
@@ -148,6 +157,14 @@
             justify-content: center;
             gap: 1rem;
             font-size: font-size(font-size-small);
+
+            @include media-medium-small {
+              font-size: 1rem;
+            }
+
+            @include media-medium-small-extra {
+              font-size: font-size(font-size-small);
+            }
 
             i {
               color: var(--color-buttons);

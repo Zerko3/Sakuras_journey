@@ -1,5 +1,5 @@
-@use "mixins" as *;
-@use "variables" as *;
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .section-register {
   margin-top: 9.6rem;
@@ -13,7 +13,7 @@
       top: -1rem;
       left: 0;
       font-size: 1.8rem;
-      font-family: "Julee", cursive;
+      font-family: 'Julee', cursive;
       color: var(--color-buttons);
     }
     &__heading--primary {
@@ -43,7 +43,7 @@
       rgba(255, 255, 255, 0.9) 65%,
       transparent 65%
     ),
-    url("../../img/shikorku-img.jpg");
+    url('../../img/shikorku-img.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -51,7 +51,7 @@
   &--heading--primary {
     color: var(--color-text);
     font-size: font-size(font-size-medium);
-    font-family: "Julee", cursive;
+    font-family: 'Julee', cursive;
   }
 
   &--input--box {
@@ -66,11 +66,19 @@
     &--name {
       width: 50%;
       padding: 1.5rem 3rem;
+
+      @include media-small {
+        width: 100%;
+      }
     }
 
     &--email {
       width: 50%;
       padding: 1.5rem 3rem;
+
+      @include media-small {
+        width: 100%;
+      }
     }
 
     &--checkbox {
@@ -91,7 +99,7 @@
       }
 
       &--check::before {
-        content: "";
+        content: '';
         top: 0;
         left: 0;
         position: absolute;

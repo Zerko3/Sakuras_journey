@@ -1,5 +1,5 @@
-@use "mixins" as *;
-@use "variables" as *;
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .section-aboutUs {
   margin-top: 9.6rem;
@@ -14,7 +14,7 @@
     top: -1rem;
     left: 0;
     font-size: 1.8rem;
-    font-family: "Julee", cursive;
+    font-family: 'Julee', cursive;
     color: var(--color-buttons);
   }
 
@@ -39,6 +39,14 @@
   align-items: center;
   justify-content: center;
 
+  @include media-bigger-small {
+    grid-template-columns: repeat(1, 1fr);
+
+    .img-two {
+      grid-row: 4/5;
+    }
+  }
+
   &--img {
     width: 100%;
     height: auto;
@@ -46,13 +54,21 @@
 
   &__para--box {
     &--span {
-      font-family: "Julee", cursive;
+      font-family: 'Julee', cursive;
       color: var(--color-buttons);
       font-size: font-size(font-size-large);
+
+      @include media-medium-small {
+        font-size: font-size(font-size-medium);
+      }
     }
     &--para {
       color: var(--color-text);
       font-size: font-size(font-size-small);
+
+      @include media-medium-small {
+        font-size: 1rem;
+      }
     }
   }
 }
