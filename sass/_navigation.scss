@@ -185,7 +185,7 @@
 
     &__link {
       cursor: pointer;
-      color: var(--color-text);
+      color: var(--color-background);
       font-size: font-size(font-size-regular);
     }
 
@@ -195,7 +195,7 @@
 
     &__link a:link,
     &__link a:visited {
-      color: var(--color-text);
+      color: var(--color-background);
       transition: all 0.3s ease-in-out;
     }
     &__link a:hover,

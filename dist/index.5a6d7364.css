@@ -312,7 +312,7 @@ html {
 
 .navigation--hamburger--box--links__link {
   cursor: pointer;
-  color: var(--color-text);
+  color: var(--color-background);
   font-size: calc(1.3rem + 1vw);
 }
 
@@ -321,7 +321,7 @@ html {
 }
 
 .navigation--hamburger--box--links__link a:link, .navigation--hamburger--box--links__link a:visited {
-  color: var(--color-text);
+  color: var(--color-background);
   transition: all .3s ease-in-out;
 }
 
