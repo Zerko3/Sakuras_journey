@@ -56,7 +56,7 @@ html {
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 358px) {
   .hero-section__text-box--heading__box--heading-primary {
     font-size: 3rem;
   }
@@ -109,6 +109,11 @@ html {
     width: 50%;
   }
 }
+@media screen and (max-width: 440px) {
+  .hero-section__text-box--img {
+    width: 100%;
+  }
+}
 
 .hero-span-img-one,
 .hero-span-img-two {
@@ -157,7 +162,7 @@ html {
   gap: 1rem;
   font-size: calc(1rem + 0.5vw);
 }
-@media screen and (max-width: 355px) {
+@media screen and (max-width: 358px) {
   .navigation__section__links-box--links {
     font-size: 1rem;
   }
@@ -391,6 +396,11 @@ html {
     font-size: 3rem;
   }
 }
+@media screen and (max-width: 358px) {
+  .header-secondary--box__header-secondary {
+    font-size: 2.5rem;
+  }
+}
 .header-secondary--box--span {
   position: absolute;
   top: -1rem;
@@ -425,6 +435,11 @@ html {
   gap: 2rem;
   margin-top: 3.2rem;
 }
+@media screen and (max-width: 515px) {
+  .section-shop__items--box__container {
+    flex-direction: column;
+  }
+}
 .section-shop__items--box__container--box {
   display: flex;
   align-items: flex-start;
@@ -441,6 +456,12 @@ html {
 @media screen and (max-width: 635px) {
   .section-shop__items--box__container--box {
     padding: 1.2rem;
+  }
+}
+@media screen and (max-width: 515px) {
+  .section-shop__items--box__container--box {
+    width: 70%;
+    padding: 1.2rem 2.4rem;
   }
 }
 .section-shop__items--box__container--box__name--box {
@@ -523,6 +544,16 @@ html {
   gap: 1rem;
   font-size: calc(1rem + 0.5vw);
 }
+@media screen and (max-width: 555px) {
+  .section-shop__items--box__container--box__bullets-box--lists li {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 515px) {
+  .section-shop__items--box__container--box__bullets-box--lists li {
+    font-size: calc(1rem + 0.5vw);
+  }
+}
 .section-shop__items--box__container--box__bullets-box--lists li i {
   color: var(--color-buttons);
 }
@@ -557,6 +588,11 @@ html {
 @media screen and (max-width: 555px) {
   .section-testimonials__heading--box__heading--primary {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 358px) {
+  .section-testimonials__heading--box__heading--primary {
+    font-size: 2.5rem;
   }
 }
 .section-testimonials__heading--box--img {
@@ -688,6 +724,11 @@ html {
     font-size: 3rem;
   }
 }
+@media screen and (max-width: 358px) {
+  .section-aboutUs__heading--box__heading--secondary {
+    font-size: 2.5rem;
+  }
+}
 .section-aboutUs__heading--box--img {
   top: -25%;
   left: -10%;
@@ -704,6 +745,14 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 440px) {
+  .section-aboutUs__content--box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-aboutUs__content--box .img-two {
+    grid-row: 4/5;
+  }
+}
 .section-aboutUs__content--box--img {
   width: 100%;
   height: auto;
@@ -713,9 +762,19 @@ html {
   color: var(--color-buttons);
   font-size: calc(1.3rem + 5vw);
 }
+@media screen and (max-width: 555px) {
+  .section-aboutUs__content--box__para--box--span {
+    font-size: calc(1.3rem + 2vw);
+  }
+}
 .section-aboutUs__content--box__para--box--para {
   color: var(--color-text);
   font-size: calc(1rem + 0.5vw);
+}
+@media screen and (max-width: 555px) {
+  .section-aboutUs__content--box__para--box--para {
+    font-size: 1rem;
+  }
 }
 
 .section-register {
@@ -747,6 +806,11 @@ html {
 @media screen and (max-width: 555px) {
   .section-register .section-register__heading--box__heading--primary {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 358px) {
+  .section-register .section-register__heading--box__heading--primary {
+    font-size: 2.5rem;
   }
 }
 .section-register .section-register__heading--box--img {
@@ -787,9 +851,19 @@ html {
   width: 50%;
   padding: 1.5rem 3rem;
 }
+@media screen and (max-width: 400px) {
+  .section-register__content--box--input--box--name {
+    width: 100%;
+  }
+}
 .section-register__content--box--input--box--email {
   width: 50%;
   padding: 1.5rem 3rem;
+}
+@media screen and (max-width: 400px) {
+  .section-register__content--box--input--box--email {
+    width: 100%;
+  }
 }
 .section-register__content--box--input--box--checkbox {
   display: flex;
@@ -843,6 +917,11 @@ html {
   border-top: 1px solid var(--color-text);
   border-bottom: 1px solid var(--color-text);
 }
+@media screen and (max-width: 400px) {
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .footer-grid--links-box ul {
   display: flex;
   align-items: center;
@@ -874,6 +953,11 @@ html {
 .footer-grid--img-box--para--box p {
   color: var(--color-text);
   font-size: 1.3rem;
+}
+@media screen and (max-width: 400px) {
+  .footer-grid--btn-box {
+    margin-top: 3.2rem;
+  }
 }
 .footer-grid--btn-box a {
   font-size: 1.3rem;
