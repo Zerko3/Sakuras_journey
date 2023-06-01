@@ -387,10 +387,13 @@ html {
 .section-break--kanji--box__kanji {
   color: var(--color-text);
   opacity: .1;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
   margin: 0 5rem;
   font-family: Noto Sans JP, sans-serif;
   font-size: 8rem;
-  display: inline-block;
+  display: flex;
 }
 
 @keyframes infinityScrollKanjiOne {

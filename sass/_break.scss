@@ -1,5 +1,5 @@
-@use "mixins" as *;
-@use "variables" as *;
+@use 'mixins' as *;
+@use 'variables' as *;
 
 .section-break {
   padding-top: 9.6rem;
@@ -13,8 +13,12 @@
     animation: infinityScrollKanjiOne 33s linear infinite;
 
     &__kanji {
-      font-family: "Noto Sans JP", sans-serif;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      // display: inline-block;
       font-size: 8rem;
       color: var(--color-text);
       opacity: 0.1;
