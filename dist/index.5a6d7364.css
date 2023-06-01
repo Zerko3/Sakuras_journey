@@ -51,6 +51,12 @@ html {
   position: relative;
 }
 
+@media screen and (width >= 1300px) {
+  .hero-section__text-box--heading__box--heading-primary {
+    font-size: 5.5rem;
+  }
+}
+
 @media screen and (width <= 555px) {
   .hero-section__text-box--heading__box--heading-primary {
     font-size: 4rem;
@@ -82,7 +88,7 @@ html {
   color: var(--color-text);
   text-align: center;
   margin-top: 3rem;
-  font-size: 1.2rem;
+  font-size: calc(1rem + .5vw);
 }
 
 .hero-section__text-box--btn {
@@ -92,6 +98,7 @@ html {
   border-radius: 2.5rem 0;
   margin-top: 2rem;
   padding: 1.2rem 2.4rem;
+  font-size: calc(1rem + .5vw);
   transition: all .3s ease-in-out;
 }
 
@@ -389,11 +396,17 @@ html {
   opacity: .1;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 10rem;
   margin: 0 5rem;
   font-family: Noto Sans JP, sans-serif;
   font-size: 8rem;
   display: flex;
+}
+
+@media screen and (width >= 1300px) {
+  .section-break--kanji--box__kanji {
+    font-size: 10rem;
+  }
 }
 
 @keyframes infinityScrollKanjiOne {
@@ -509,6 +522,12 @@ html {
   color: var(--color-text);
   font-size: calc(1.3rem + 1vw);
   font-weight: 300;
+}
+
+@media screen and (width >= 1300px) {
+  .section-shop__items--box__container--box__name--box--heading {
+    font-size: 3.6rem;
+  }
 }
 
 @media screen and (width <= 800px) {
@@ -1018,7 +1037,7 @@ html {
 
 .footer-grid--links-box ul li a {
   color: var(--color-text);
-  font-size: 1.3rem;
+  font-size: calc(1rem + .5vw);
 }
 
 .footer-grid--img-box {
@@ -1043,7 +1062,7 @@ html {
 
 .footer-grid--img-box--para--box p {
   color: var(--color-text);
-  font-size: 1.3rem;
+  font-size: calc(1rem + .5vw);
 }
 
 @media screen and (width <= 400px) {

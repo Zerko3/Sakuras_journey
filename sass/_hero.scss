@@ -36,7 +36,7 @@
     &--para {
       margin-top: 3rem;
       width: 70%;
-      font-size: 1.2rem;
+      font-size: font-size(font-size-small);
       color: var(--color-text);
       text-align: center;
     }
@@ -46,6 +46,7 @@
       padding: 1.2rem 2.4rem;
       background-color: var(--color-buttons);
       color: var(--color-background);
+      font-size: font-size(font-size-small);
       border: none;
       border-top-right-radius: 0;
       border-top-left-radius: 2.5rem;

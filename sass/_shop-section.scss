@@ -80,6 +80,10 @@
           color: var(--color-text);
           font-weight: font-weight(font-weight-light);
 
+          @include media-desktop {
+            font-size: 3.6rem;
+          }
+
           @include media-tablet {
             font-size: font-size(font-size-small);
           }

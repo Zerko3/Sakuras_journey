@@ -23,7 +23,7 @@
       gap: 1rem;
 
       li a {
-        font-size: 1.3rem;
+        font-size: font-size(font-size-small);
         color: var(--color-text);
       }
     }
@@ -48,7 +48,7 @@
 
       p {
         color: var(--color-text);
-        font-size: 1.3rem;
+        font-size: font-size(font-size-small);
       }
     }
   }
