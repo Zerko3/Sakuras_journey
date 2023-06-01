@@ -30,6 +30,10 @@
           left: 30%;
           color: var(--color-buttons);
 
+          @include media-medium-small {
+            position: initial;
+          }
+
           @include media-tablet-small {
             left: 0%;
           }

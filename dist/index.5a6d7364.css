@@ -83,6 +83,12 @@ html {
   left: 30%;
 }
 
+@media screen and (width <= 555px) {
+  .hero-section__text-box--heading__box--heading-primary--span-two {
+    position: initial;
+  }
+}
+
 @media screen and (width <= 768px) {
   .hero-section__text-box--heading__box--heading-primary--span-two {
     left: 0%;
