@@ -363,8 +363,11 @@ html {
   animation: infinityScrollKanjiOne 33s linear infinite;
 }
 .section-break--kanji--box__kanji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
   font-family: "Noto Sans JP", sans-serif;
-  display: inline-block;
   font-size: 8rem;
   color: var(--color-text);
   opacity: 0.1;
