@@ -61,7 +61,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 1 }
+  { threshold: 0.25 }
 );
 const observerTwo = new IntersectionObserver(
   (entries, observer) => {
@@ -75,7 +75,7 @@ const observerTwo = new IntersectionObserver(
       }
     });
   },
-  { threshold: 1 }
+  { threshold: 0.25 }
 );
 
 // Scroll function

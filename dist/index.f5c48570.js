@@ -596,7 +596,7 @@ const observer = new IntersectionObserver((entries, observer)=>{
         if (entry.isIntersecting) hamburgerNav.classList.remove("navigation--hamburger--active");
     });
 }, {
-    threshold: 1
+    threshold: 0.25
 });
 const observerTwo = new IntersectionObserver((entries, observer)=>{
     entries.forEach((entry)=>{
@@ -609,7 +609,7 @@ const observerTwo = new IntersectionObserver((entries, observer)=>{
         }
     });
 }, {
-    threshold: 1
+    threshold: 0.25
 });
 // Scroll function
 const scrollFunction = function(e) {
