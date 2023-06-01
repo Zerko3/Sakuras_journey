@@ -63,7 +63,7 @@ html {
 }
 @media screen and (max-width: 358px) {
   .hero-section__text-box--heading__box--heading-primary {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 .hero-section__text-box--heading__box--heading-primary--span-two {
