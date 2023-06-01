@@ -44,6 +44,11 @@ html {
 .hero-section__text-box--heading__box {
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 555px) {
+  .hero-section__text-box--heading__box {
+    text-align: center;
+  }
+}
 .hero-section__text-box--heading__box--heading-primary {
   font-family: "Julee", cursive;
   font-size: 5.2rem;

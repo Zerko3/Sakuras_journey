@@ -43,6 +43,12 @@ html {
   margin-bottom: 5rem;
 }
 
+@media screen and (width <= 555px) {
+  .hero-section__text-box--heading__box {
+    text-align: center;
+  }
+}
+
 .hero-section__text-box--heading__box--heading-primary {
   flex-direction: column;
   font-family: Julee, cursive;

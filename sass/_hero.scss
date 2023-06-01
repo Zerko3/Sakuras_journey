@@ -14,6 +14,9 @@
 
     &--heading__box {
       margin-bottom: 5rem;
+      @include media-medium-small {
+        text-align: center;
+      }
       &--heading-primary {
         @include headerStyle;
         position: relative;
