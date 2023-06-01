@@ -4,6 +4,10 @@
   font-family: 'Julee', cursive;
   font-size: 5.2rem;
 
+  @include media-desktop {
+    font-size: 5.5rem;
+  }
+
   @include media-medium-small {
     font-size: 4rem;
   }
